@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gemunu Libre', sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header::before {
+  content: '';
+  background: url("../img/show-case.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: #fff;
+}
+
+.header header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header header .image img {
+  width: 200px;
+  padding-left: 70px;
+}
+
+.header header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 70px;
+}
+
+.header header .navbar ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+  margin: 20px;
+  font-size: 1.6rem;
+}
+
+.header header .navbar ul li a {
+  padding: 7px;
+  -webkit-transition: all .2 ease-in;
+  transition: all .2 ease-in;
+}
+
+.header header .navbar ul li a:hover {
+  color: #e6e3e3;
+  border-bottom: 3px solid royalblue;
+}
+
+.header .show-case .container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .show-case .container .moving-text {
+  font-size: 3rem;
+}
+
+.header .show-case .container h3 {
+  margin: 20px;
+  font-size: 1.3rem;
+}
+
+.header .show-case .container .light-btn {
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #000;
+  padding: 12px;
+  border-radius: 3px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.header .show-case .container .light-btn:hover {
+  background: royalblue;
+  cursor: pointer;
+  color: #e6e4e4;
+}
+
+.specialize .container {
+  margin: 70px 120px;
+}
+
+.specialize .container .text {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.specialize .container .text h2 {
+  text-transform: uppercase;
+}
+
+.specialize .container .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  grid-gap: 40px;
+}
+
+.specialize .container .cards .card {
+  text-align: center;
+}
+
+.specialize .container .cards .card i {
+  color: royalblue;
+}
+
+.dell {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  text-align: center;
+  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dell .item {
+  padding: 20px;
+  height: 200px;
+  padding-top: 60px;
+}
+
+.dell .item:nth-child(2n) {
+  background: #f4f4f4;
+}
+
+.dell .item:nth-child(2n+1) {
+  background-color: silver;
+}
+
+.specialize .container .cards #cd i {
+  color: #fff;
+  background: #444;
+  border-radius: 100%;
+  padding: 20px;
+}
+
+.specialize .container .cards #cd i:hover {
+  background: royalblue;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+footer {
+  padding-left: 200px;
+  padding-right: 200px;
+  background: #444;
+  color: #fff;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container #copyright {
+  margin-top: 15px;
+}
+
+footer .container #icons i {
+  margin: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+footer .container #icons i:hover {
+  cursor: pointer;
+  color: royalblue;
+  border-color: royalblue;
+}
+/*# sourceMappingURL=main.css.map */

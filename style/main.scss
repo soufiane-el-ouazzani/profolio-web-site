@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header::before {
+    content: '';
+    background: url('../img/show-case.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0 ;
+    right: 0;
+    z-index: -1;
+     
+}
+
+.header {
+    background: rgba($color: #000000, $alpha: .3);
+    position: relative;
+    color: #fff;
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        
+        .image img{
+            width: 200px;
+            padding-left: 70px;
+        
+        }
+    
+        .navbar { 
+                ul {
+                    display: flex;
+                    margin-right: 70px;
+                    
+                    li {
+                        flex: 1;
+                        list-style: none;
+                        margin: 20px;
+                        font-size: 1.6rem;
+                        a {
+                            // background: rgba(0, 0, 0, 0.1);
+                            padding: 7px;
+                            transition: all .2 ease-in;
+                        }
+                        a:hover {
+                            // background: rgba(0, 0, 0, 0.1);
+                            color: rgb(230, 227, 227);
+                            border-bottom: 3px solid royalblue;
+                            
+                        }
+    
+                    }
+                }
+        }
+    }
+    
+    .show-case {
+        
+        
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            padding-top: 150px;
+            align-items: center;
+            .moving-text {
+                font-size: 3rem;
+            }
+            h3 {
+                margin: 20px;
+                font-size: 1.3rem;
+            }
+            .light-btn{
+                font-size: 1.2rem;
+                background-color: #fff;
+                color: #000;
+                padding: 12px;
+                border-radius: 3px;
+                transition: all .2s ease-in;
+            }
+            .light-btn:hover {
+                background: royalblue;
+                cursor: pointer;
+                color: rgb(230, 228, 228);
+            }
+        }
+    
+    }
+
+}
+
+.specialize {
+    .container {
+        margin: 70px 120px;
+        .text {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-bottom: 50px;
+            h2 {
+                text-transform: uppercase;
+            }
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-gap: 40px;
+            .card {
+                text-align: center;
+                i {
+                    color: royalblue;
+                }
+            }
+            
+        }
+    }
+}
+
+.dell {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    text-align: center;
+    margin-top: 100px;
+    align-items: center;
+    
+    .item {
+        padding: 20px;
+        height: 200px;
+        padding-top: 60px;
+    }
+    .item:nth-child(2n) {
+        background: #f4f4f4;
+    }
+    .item:nth-child(2n+1) {
+        background-color: silver;
+    }
+}
+
+.specialize {
+    .container {
+        .cards {
+            #cd {
+                i {
+                    color: #fff;
+                    background: #444;
+                    border-radius: 100%;
+                    padding: 20px;
+                }
+                i:hover {
+                    background: royalblue;
+                    cursor: pointer;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding-left: 200px;
+    padding-right: 200px;
+    background: #444;
+    color: #fff;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        #copyright {
+            margin-top: 15px;
+        }
+        #icons {
+            i {
+                margin: 15px;
+                align-items: center;
+                border: 2px solid #fff ;
+                padding: 6px;
+                border-radius: 50%;
+            }
+            i:hover {
+                cursor: pointer;
+                color: royalblue;
+                border-color: royalblue;
+            }
+            
+        }
+    }
+}

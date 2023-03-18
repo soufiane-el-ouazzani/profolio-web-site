@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header::before {
+    content: '';
+    background: url('../img/show-case.jpg') no-repeat center top/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0 ;
+    right: 0;
+    z-index: -1;
+     
+}
+
+.header {
+    background: rgba($color: #000000, $alpha: .3);
+    position: relative;
+    color: #fff;
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 75px;
+        
+        .image img{
+            width: 170px;
+            padding-left: 70px;
+        
+        }
+    
+        .navbar { 
+                ul {
+                    display: flex;
+                    margin-right: 70px;
+                    
+                    li {
+                        flex: 1;
+                        list-style: none;
+                        margin: 20px;
+                        font-size: 1.6rem;
+                        a {
+                            // background: rgba(0, 0, 0, 0.1);
+                            padding: 7px;
+                            transition: all .2 ease-in;
+                        }
+                        a:hover {
+                            // background: rgba(0, 0, 0, 0.1);
+                            color: rgb(230, 227, 227);
+                            border-bottom: 3px solid royalblue;
+                            
+                        }
+    
+                    }
+                }
+        }
+    }
+    
+}
+
+#show-case {
+    padding: 40px 200px;
+    .container {
+        .text {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(4,330px);
+            // grid-gap: 2px;
+            .card {
+                position: relative;
+                overflow: hidden;
+
+                &:hover .trans,p {
+                    transform: translate(0%, 0%) rotate(0deg);
+                    
+                }
+
+                &:hover p {
+                    opacity: 1;
+                }
+                .trans {
+                    width: 100%;
+                    height: 330px;
+                    position: absolute;
+                    opacity: 0.6;
+                    background-color: rgb(70, 104, 206);
+                    transform: translate(-100%, -100%) rotate(45deg);
+                    transition: all .25s ease;
+                }
+                img {
+                    height:100%;
+                    width: 100%;
+                }
+                p {
+                    position: absolute;
+                    align-items: center;
+                    top: 150px;
+                    left: 150px;
+                    color: #fff;
+                    opacity: 0;
+                    font-size: 1.5rem;
+                    // z-index: 100;
+                    transition: all .25s ease-in;
+                    // &:hover {
+                    //     opacity: 1;
+                    // }
+                }
+                
+            }
+        }
+    }
+}
